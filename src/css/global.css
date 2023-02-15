@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.tab-content {
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+
+.buttonAzul{
+    background: blue;
+    border: 2px solid blue;
+    color: white;
+    font-size: bold;
+    border-radius: 4px;
+}
+
+.buttonAzul:hover{
+    background: transparent;
+    color: blue;
+}
+
+.color-boxT1 {
+    position: absolute;
+    top:100px;
+    margin-right: 50px;
+    background: blue;
+    height: 95%;
+    z-index: 1;
+    
+}
+
+.color-box{
+    display: flex;
+    position: absolute;
+    background: blue;
+    width: 595px;
+    height: 75%;
+}
+
+
+.color-boxT2 {
+    position: absolute;
+    top:100px;
+    margin-right: 50px;
+    background: blue;
+    height: 80%;
+    z-index: 1;
+}
+
+.color-boxT3 {
+    position: absolute;
+    top:100px;
+    margin-right: 50px;
+    background: blue;
+    height: 90%;
+    z-index: 1;
+}
+
+.faQs-Style{
+    position: relative;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contatc{
+    background-color: blue;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.footer-style{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: darkBlue;
+    height: 80px;
+    bottom: 0;
+}
+
+.redes:hover{
+    background-image: repeating-linear-gradient(229, 31%, 21%);   
+}
