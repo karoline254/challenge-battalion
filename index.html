@@ -16,10 +16,10 @@
     <title>Interview Challenge</title>
 
   </head>
-  <body >
+  <body class="m-0 p-0" >
     <div class="flex justify-around my-12 items-center m">
       <img src="./images/logo-bookmark.svg" alt="logo-bookmark" />
-      <div class="flex gap-8 items-center">
+      <div class="flex gap-8 items-center mb:hidden des:flex">
         <a
           href="#"
           class="text-sm transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
@@ -36,51 +36,53 @@
           >CONTACT</a
         >
         <button
-          class="bg-pink-500 transition duration-500 hover:border-pink-500 hover:bg-transparent hover:text-pink-500 border-2 text-white font-bold py-2 px-8 rounded shadow-lg"
+          class="bg-pink-500 transition duration-500 hover:border-pink-500 hover:bg-transparent hover:text-pink-500 border text-white font-bold py-2 px-8 rounded shadow-lg"
         >
           Login
         </button>
       </div>
+      <div class="des:hidden mb:flex">Menu</div>
     </div>
-    <div class="flex justify-center items-center ml-18 my-24 font-['Rubik']">
-      <div class="w-4/12 ml-10 sm:text-center">
-        <h1 class="font-bold text-5xl text-left mb-3">
+
+    <div class="flex flex-col-reverse des:flex des:flex-row justify-center items-center des:my-24 font-['Rubik'] ">
+      <div class="des:flex-col des:-mr-[100px] des:w-[450px] des:text-left mb:text-center mb:w-80 mb:-mt-[50px]">
+        <h1 class="font-bold mb:text-center des:text-left mt-32 mb:text-2xl des:text-5xl mb-3">
           A Simple Bookmark Manager
         </h1>
-        <p class="mb-3 text-lg text-gray-500">
+        <p class="mb-3 text-center des:text-left mb:mt-4 text-gray-500">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instently. Try it for free.
         </p>
-        <div>
+        <div class="flex justify-center gap-4 items-center mb:mt-8 mb:justify-start">
           <button
-            class="buttonAzul buttonAzul:hover transition font-['Rubik'] duration-500 py-3 px-6 shadow-lg"
-          >
+            class="buttonAzul des:buttonAzul:hover mb:text-xs des:text-base transition font-['Rubik'] font-bold duration-500 py-3 px-6 shadow-lg"
+          > 
             Get it on Chrome
           </button>
           <button
-            class="bg-white-500 transition duration-500 hover:border-gray-500 font-['Rubik'] border-2 text-gray-500 font-bold py-3 px-6 rounded shadow-lg"
+            class="bg-white-500 transition duration-500 mb:text-xs des:text-base hover:border-gray-500 font-['Rubik'] border-2 text-gray-500 font-bold py-3 px-6 rounded shadow-lg"
           >
             Get it on Firefox
           </button>
         </div>
       </div>
-      <div class="relative overflow-visible md:h-full md:w-48">
+      <div class="relative overflow-visible des:-mr-[140px] md:h-full md:w-48">
         <div
-          class="z-0 color-box ml-64 top-1/3 rounded-bl-full rounded-tl-full shadow-lg"
+          class="z-0 color-box des:ml-64 des:mt-[150px] des:w-[595px] rounded-bl-full rounded-tl-full shadow-lg mb:w-[290px] mb:ml-[40px] mb:mt-16"
         ></div>
         <img
           src="./images/illustration-hero.svg"
           alt=""
-          class="z-20 relative ml-20"
+          class="z-20 des:w-[680px] relative mb:w-72 des:ml-[150px]"
         />
       </div>
     </div>
     <div class="grid place-content-center my-24">
-      <h1 class="flex items-center justify-center font-semibold font-['Rubik'] text-3xl">
+      <h1 class="flex items-center justify-center des:text-3xl mb:text-2xl font-semibold font-['Rubik'] ">
         Features
       </h1>
       <p
-        class="mt-6 text-gray-500 flex items-center justify-center text-center w-[480px] "
+        class="mt-6 text-gray-500 mb:text-center mb:w-80 flex items-center justify-center text-center des:w-[480px] "
       >
         Our aim to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
@@ -89,7 +91,7 @@
     </div>
 
     <div class=" sm:flex-col bg-white flex justify-center items-center -mt-16">
-      <nav  class="tabs flex  flex-row sm:flex-col">
+      <nav  class="tabs flex flex-col des:flex des:flex-row">
         <button
           data-target="panel-1"
           class="tab active text-gray-600 py-4 px-6 block hover:text-pink-500 focus:outline-none text-gray-600 border-b-2 font-medium border-pink-500"
@@ -111,75 +113,84 @@
       </nav>
     </div>
 
+                                  <!-- Daqui pra cima já está feito! ♥    -->
+
     <div id="panels">
-      <div class="panel-1 tab-content active py-5 -mt-12 ">
-        <div class="flex justify-center items-center my-24">
-        <div class="relative -ml-20 mr-5">
+      <div class="panel-1 tab-content active py-5 -mt-12">
+        <div class="flex flex-col des:flex des:flex-row justify-center items-center my-24">
+        <div class="relative des:-ml-24 des:mr-14 mb:mb-[90px]">
           <div
-            class="color-boxT1 w-[750px] overflow-hidden -ml-64 rounded-br-full rounded-tr-full"
+            class="color-boxT1 overflow-hidden rounded-br-full rounded-tr-full des:w-[750px] des:-ml-64 des:mt-[100px] mb:w-60 mb:-ml-[36px] mb:mt-[55px]"
           ></div>
           <img
             src="./images/illustration-features-tab-1.svg"
             alt="illustration-features-tab-1"
-            class="z-20 relative"
+            class="z-20 mb:w-72 mb:-ml-[5px] des:w-[600px] relative"
           />
         </div>
-        <div class="w-3/12 ml-20">
-          <h1 class="font-bold text-3xl font-['Rubik']">Bookmark in once click</h1>
-          <p class="mb-3 text-base text-gray-500 my-6">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-          <button class="my-2 font-['Rubik'] buttonAzul buttonAzul:hover transition duration-500 py-1 px-6 ">More Info</button>
+        <div class="des:w-3/12 des:ml-20 des:text-left mb:w-60 mb:text-center ">
+          <h1 class="font-bold des:text-3xl mb:text-2xl mb:-ml-[50px] mb:w-80 font-['Rubik']">Bookmark in once click</h1>
+          <p class="mb-3 text-base text-gray-500 mb:flex mb:-ml-[50px] mb:items-center mb:w-80 my-6">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <button class="my-2 font-['Rubik'] des:-ml-[50px] mb:-ml-[30px] buttonAzul buttonAzul:hover transition duration-500 py-1 px-6 ">More Info</button>
         </div>
       </div>
       </div>
+  
+    <!-- Painel dois -->
+
       <div class="panel-2 tab-content py-5 -mt-12 ">
-        <div class="flex justify-center items-center my-24">
+        <div class="flex flex-col des:flex des:flex-row justify-center items-center my-24">
         <div class="relative -ml-20 mr-5">
           <div
-            class="color-boxT2 w-[700px] overflow-hidden -ml-64 rounded-br-full rounded-tr-full"
+            class="color-boxT2 overflow-hidden rounded-br-full rounded-tr-full des:w-[680px] des:-ml-[210px] des:mt-[100px] des:-ml-64 mb:w-60 mb:ml-[30px] mb:-mt-[36px] mb:mt-[55px]"
           ></div>
           <img
             src="./images/illustration-features-tab-2.svg"
             alt="illustration-features-tab-3"
-            class="z-20 relative"
+            class="z-20 mb:w-64 mb:ml-[50px] des:w-[500px] relative"
           />
         </div>
-        <div class="w-3/12 ml-20">
-          <h1 class="font-bold text-3xl font-['Rubik']">Intelligent search</h1>
-          <p class="mb-3 text-base text-gray-500 my-6">Our powerful search feaature will help you find saved sites in no time at all. No need to trawl throwgh all of your bookmarks.</p>
-          <button class="my-2 font-['Rubik'] buttonAzul buttonAzul:hover transition duration-500 py-1 px-6 ">More Info</button>
+        <div class="des:w-3/12 des:ml-20 des:text-left mb:w-60 mb:text-center mb:mt-12">
+          <h1 class="font-bold des:text-3xl mb:text-2xl mb:-ml-[50px] mb:w-80 font-['Rubik']">Intelligent search</h1>
+          <p class="mb-3 text-base text-gray-500 mb:flex mb:-ml-[50px] mb:items-center mb:w-80 my-6">Our powerful search feaature will help you find saved sites in no time at all. No need to trawl throwgh all of your bookmarks.</p>
+          <button class="my-2 font-['Rubik'] des:-ml-[50px] mb:-ml-[30px] buttonAzul buttonAzul:hover transition duration-500 py-1 px-6 ">More Info</button>
         </div>
       </div>
       </div>
+
+    <!-- Painel três -->
+
       <div class="panel-3 tab-content py-5 -mt-12">
-        <div class="flex justify-center items-center my-24">
+        <div class="flex flex-col des:flex des:flex-row justify-center items-center my-24">
           <div class="relative -ml-24 mr-5">
             <div
-              class="color-boxT3 w-[650px] overflow-hidden -ml-64 rounded-br-full rounded-tr-full"
+              class="color-boxT3 overflow-hidden rounded-br-full rounded-tr-full des:w-[680px] des:-ml-[210px] des:mt-[100px] des:-ml-64 mb:w-[270px] mb:ml-[10px] mb:-mt-[50px] mb:mt-[55px]"
             ></div>
             <img
               src="./images/illustration-features-tab-3.svg"
               alt="illustration-features-tab-3"
-              class="z-20 relative"
+              class="z-20 mb:w-64 mb:ml-[50px] mb:-mr-[60px] des:w-[500px] relative"
             />
           </div>
-          <div class="w-3/12 ml-20">
-            <h1 class="font-bold text-3xl font-['Rubik']">Share your bookmarks</h1>
-            <p class="mb-3 text-base text-gray-500 my-6">Easily share your bookmarks and collections with others. Create a shareable link that you can sent at the click of a button.</p>
-            <button class="my-2 font-['Rubik'] buttonAzul buttonAzul:hover transition duration-500 py-1 px-6 ">More Info</button>
+          <div class="des:w-3/12 des:ml-[200px] des:text-left mb:w-60 mb:text-center mb:mt-12">
+            <h1 class="font-bold des:text-3xl des:text-left mb:text-2xl mb:-ml-[50px] mb:w-80 font-['Rubik']">Share your bookmarks</h1>
+            <p class="mb-3 text-base text-gray-500 text-center des:text-left mb:flex mb:-ml-[50px] mb:w-80 my-6">Easily share your bookmarks and collections with others. Create a shareable link that you can sent at the click of a button.</p>
+            <button class="my-2 font-['Rubik'] des:-ml-[50px] mb:-ml-[30px] buttonAzul buttonAzul:hover transition duration-500 py-1 px-6 ">More Info</button>
           </div>
         </div>
       </div>
-      <div class="panel-3 tab-content py-5 flex justify-center items-center"></div>
     </div>
 
-    <div class="h-screen">
+                                  <!-- Daqui pra cima já está feito! ♥    -->
+
+    <div class="h-full">
       <div>
-        <div class="grid place-content-center my-24">
-          <h1 class="flex items-center font-['Rubik']  justify-center font-semibold text-3xl">
+        <div class="grid place-content-center my-24 mb:-mt-4 ">
+          <h1 class=" text-center font-['Rubik'] font-semibold des:w-[500px] mb:w-80 des:text-3xl mb:text-2xl ">
             Download the extension
           </h1>
           <p
-            class="mt-8 text-gray-500 flex items-center justify-center text-center w-[500px]"
+            class="mt-8 text-gray-500 flex items-center mb:w-80 des:w-[500px] justify-center text-center w-[500px]"
           >
             We've got more browsers in the pipeline. Please do let us know if
             you've got a favourite you'd like us to prioritize.
@@ -187,7 +198,7 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-center gap-8 -mt-24">
+      <div class="flex flex-col des:flex des:flex-row justify-center items-center des:gap-8 mb:gap-4 des:-mt-24 mb:mt-12">
         <div
           class="rounded shadow-lg w-64 h-80 text-center flex items-center justify-center flex-col"
         >
@@ -202,7 +213,7 @@
           </button>
         </div>
         <div
-          class="rounded shadow-lg w-64 h-80 text-center flex items-center justify-center flex-col mt-16"
+          class="rounded shadow-lg w-64 h-80 text-center flex items-center justify-center flex-col des:mt-16 mb:mt-8 "
         >
           <img src="./images/logo-firefox.svg" alt="logo-firefox" />
           <h1 class="font-semibold mt-6 font-['Rubik']">Add to Firefox</h1>
@@ -215,7 +226,7 @@
           </button>
         </div>
         <div
-          class="rounded shadow-lg w-64 h-80 text-center flex items-center justify-center flex-col mt-32"
+          class="rounded shadow-lg w-64 h-80 text-center flex items-center justify-center flex-col des:mt-32 mb :mt-8"
         >
           <img src="./images/logo-opera.svg" alt="logo-opera" />
           <h1 class="font-semibold mt-6 font-['Rubik']">Add to Opera</h1>
@@ -229,34 +240,40 @@
         </div>
       </div>
     </div>
-    <div class="h-screen ">
+
+                                  <!-- Daqui pra cima já está feito! ♥    -->
+
+    <div class="h-full">
       <div>
-        <div class="grid place-content-center mb-20 -mt-16">
-          <h1 class="flex items-center justify-center font-['Rubik'] font-semibold text-3xl">
+        <div class="grid place-content-center mb-20 mt-16">
+          <h1 class="flex items-center justify-center mb:w-80 des:w-[500px] font-['Rubik'] font-semibold des:text-3xl mb:text-2xl">
             Frequently Asked Questions
           </h1>
           <p
-            class="mt-8 text-gray-500 flex items-center justify-center text-center w-[500px]"
+            class="mt-8 text-gray-500 flex items-center mb:w-80 des:w-[500px] justify-center text-center w-[500px]"
           >
             Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
           </p>
         </div>
       </div>
     
+                                  <!-- Daqui pra cima já está feito! ♥    -->
+
+
     <div class="bg-white flex justify-center items-center flex-col">
-    <div class="faQs-Style" >
+    <div class="faQs-Style mb:w-80 des:w-[500px]" >
       <input 
         type="checkbox"
         class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
       >
       <div class=" h-12 w-full pl-5 flex items-center border-y">
-        <h1 class="text-lg font-normal font-['Rubik'] ">What is Boolkmark?</h1>
+        <h1 class="des:text-lg mb:text-base mb:-ml-[20px] font-['Rubik']  ">What is Boolkmark?</h1>
       </div>
       <div class="absolute top-5 right-3 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
         <img src="./images/icon-arrow.svg" alt="icon-arrow">
       </div>
       <div class="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 flex items-center">
-        <div class="p-4">
+        <div class="p-4 ">
           <p class="text-gray-500">Bookmark is a method of saving a web page's address. While using most browsers, pressing Ctrl+D bookmarks the page you are viewing.</p>
         </div>
       </div>
@@ -266,12 +283,12 @@
           class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
         >
         <div class=" h-12 w-full pl-5 flex items-center border-y">
-          <h1 class="text-lg font-normal font-['Rubik']">How can I request a new browser?</h1>
+          <h1 class="des:text-lg mb:text-base mb:-ml-[20px] font-['Rubik']">How can I request a new browser?</h1>
         </div>
         <div class="absolute top-5 right-3 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
           <img src="./images/icon-arrow.svg" alt="icon-arrow">
         </div>
-        <div class="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 flex items-center">
+        <div class="overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-64 flex items-center">
           <div class="p-4">
             <p class="text-gray-500">Vivamus luctus eeros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
               Vivamus luctus eeros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
@@ -285,7 +302,7 @@
             class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
           >
           <div class=" h-12 w-full pl-5 flex items-center border-y">
-            <h1 class="text-lg font-normal font-['Rubik'] ">Is there a mobile app?</h1>
+            <h1 class="des:text-lg mb:text-base mb:-ml-[20px] font-['Rubik'] ">Is there a mobile app?</h1>
           </div>
           <div class="absolute top-5 right-3 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
             <img src="./images/icon-arrow.svg" alt="">
@@ -302,7 +319,7 @@
               class="peer absolute top-2 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
             >
             <div class=" h-12 w-full pl-5 flex items-center border-y">
-              <h1 class="text-lg font-normal font-['Rubik']">What about other Chromium browsers?</h1>
+              <h1 class="des:text-lg mb:text-base mb:-ml-[20px] font-['Rubik']">What about other Chromium browsers?</h1>
             </div>
             <div class="absolute top-5 right-3 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
               <img src="./images/icon-arrow.svg" alt="">
@@ -321,24 +338,29 @@
       </div>
     </div>
   </div>
-      <div class=" box-contatc flex items-center justify-center flex-col" >
+  
+                                  <!-- Daqui pra cima já está feito! ♥    -->
 
-        <div class="flex flex-col justify-center items-center mb-12 ">
-          <p class="text-center font-light mb-8 font-['Rubik']">35,000 + ALREADY JOIND</p>
-          <h1 class="text-4xl text-center font-bold w-[500px] font-['Rubik']">Stay up-to-date with what we're doing.</h1>
+
+
+  <footer class="footer-style h-full">
+        <div class="box-contatc des:flex mb:flex mb:flex-col h-[400px] items-center justify-center" >
+          <div class="des:flex mb:flex mb:flex-col justify-center items-center mb-12 mt-12 ">
+            <p class="text-center font-light des:mb-8 font-['Rubik']">35,000 + ALREADY JOIND</p>
+            <h1 class="des:text-4xl mb:text-2xl text-center font-bold des:w-[500px] font-['Rubik']">Stay up-to-date with what we're doing.</h1>
+          </div>
+      
+          <div class="des:flex des:items-center des:justify-center des:mb-12 mb:mb-8 mb:text-center ">
+            <input type="email" nome="email" placeholder="Enter your email address" class="text-black p-2 w-80 rounded mr-4">
+            <button  class="bg-softRed transition duration-500 hover:border-softRed hover:bg-transparent hover:text-softRed border-2 text-white font-bold des:w-32 des:mb-4 mb:w-80 mb:p-2 mb:-ml-[13px] mb:mt-4 des:p-2 rounded shadow-lg">Contact us</button>
+          </div>
+      
         </div>
-
-        <div class="flex items-center justify-center mb-12  ">
-          <input type="email" nome="email" placeholder="Enter your email address" class="text-black p-2 w-80 rounded mr-4">
-          <button  class="bg-pink-500 transition duration-500 hover:border-pink-500 hover:bg-transparent hover:text-pink-500 border-2 text-white font-bold py-2 px-8 rounded shadow-lg">Contact us</button>
-        </div>
-
-      </div>
-
-      <footer class="footer-style">
-        <div class="flex justify-around items-center gap-8">
+       <div class="des:flex des:items-center des:justify-around mb:flex mb:flex-col">
+        <div class="gap-8 h-12">
           <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="mr-4"/>
-          <div class="flex gap-8 items-center ">
+        </div>
+          <div class="gap-8 items-center">
             <a
               href="#"
               class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
@@ -355,12 +377,15 @@
               >CONTACT</a
             >
           </div>
-        </div> 
         
-          <div class="flex justify-center items-center gap-2 ">
+          <div class="flex justify-center items-center gap-2">
            <img class="object-cover transform hover:scale-110 transition duration-300 ease-in-out" src="./images/icon-facebook.svg" alt="icon-facebook">
            <img class="object-cover transform hover:scale-110 transition duration-300 ease-in-out" src="./images/icon-twitter.svg" alt="icon-twitter">
           </div>
+     
+        </div> 
+        
+          
          
        
 
