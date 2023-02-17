@@ -17,7 +17,7 @@
 
   </head>
   <body class="m-0 p-0" >
-    <div class="flex justify-around my-12 items-center m">
+    <div class="flex justify-around my-12 items-center ">
       <img src="./images/logo-bookmark.svg" alt="logo-bookmark" />
       <div class="flex gap-8 items-center mb:hidden des:flex">
         <a
@@ -28,7 +28,7 @@
         <a
           href="#"
           class="text-sm transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
-          >PRINCING</a
+          >PRICING</a
         >
         <a
           href="#"
@@ -41,26 +41,28 @@
           Login
         </button>
       </div>
-      <div class="des:hidden mb:flex">Menu</div>
+      <div class="mobile-menu-icon des:hidden mb:flex">
+        <button><img class="icon" src="./images/icon-hamburger.svg" alt="icon-hamburger"></button>
+      </div>
     </div>
 
-    <div class="flex flex-col-reverse des:flex des:flex-row justify-center items-center des:my-24 font-['Rubik'] ">
+    <div class="flex flex-col-reverse justify-center items-center font-['Rubik'] des:flex des:flex-row des:my-24">
       <div class="des:flex-col des:-mr-[100px] des:w-[450px] des:text-left mb:text-center mb:w-80 mb:-mt-[50px]">
-        <h1 class="font-bold mb:text-center des:text-left mt-32 mb:text-2xl des:text-5xl mb-3">
+        <h1 class="font-bold mt-32 mb:text-2xl mb-3 mb:text-center des:text-5xl des:text-left">
           A Simple Bookmark Manager
         </h1>
-        <p class="mb-3 text-center des:text-left mb:mt-4 text-gray-500">
+        <p class="mb-3 text-gray-500 text-center des:text-left mb:mt-4 ">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instently. Try it for free.
         </p>
         <div class="flex justify-center gap-4 items-center mb:mt-8 mb:justify-start">
           <button
-            class="buttonAzul des:buttonAzul:hover mb:text-xs des:text-base transition font-['Rubik'] font-bold duration-500 py-3 px-6 shadow-lg"
+            class="buttonAzul buttonAzul:hover transition font-['Rubik'] font-bold duration-500 py-3 px-6 shadow-lg mb:text-xs des:text-base"
           > 
             Get it on Chrome
           </button>
           <button
-            class="bg-white-500 transition duration-500 mb:text-xs des:text-base hover:border-gray-500 font-['Rubik'] border-2 text-gray-500 font-bold py-3 px-6 rounded shadow-lg"
+            class="bg-white-500 transition duration-500  hover:border-gray-500 font-['Rubik'] border-2 text-gray-500 font-bold py-3 px-6 rounded shadow-lg mb:text-xs des:text-base"
           >
             Get it on Firefox
           </button>
@@ -68,7 +70,7 @@
       </div>
       <div class="relative overflow-visible des:-mr-[140px] md:h-full md:w-48">
         <div
-          class="z-0 color-box des:ml-64 des:mt-[150px] des:w-[595px] rounded-bl-full rounded-tl-full shadow-lg mb:w-[290px] mb:ml-[40px] mb:mt-16"
+          class="z-0 color-box rounded-bl-full rounded-tl-full shadow-lg des:ml-64 des:mt-[150px] des:w-[595px] mb:w-[290px] mb:ml-[40px] mb:mt-16"
         ></div>
         <img
           src="./images/illustration-hero.svg"
@@ -78,11 +80,11 @@
       </div>
     </div>
     <div class="grid place-content-center my-24">
-      <h1 class="flex items-center justify-center des:text-3xl mb:text-2xl font-semibold font-['Rubik'] ">
+      <h1 class="flex items-center font-semibold font-['Rubik'] justify-center des:text-3xl mb:text-2xl">
         Features
       </h1>
       <p
-        class="mt-6 text-gray-500 mb:text-center mb:w-80 flex items-center justify-center text-center des:w-[480px] "
+        class="mt-6 text-gray-500 flex items-center justify-center text-center des:w-[480px] mb:text-center mb:w-80 "
       >
         Our aim to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
@@ -90,7 +92,7 @@
       </p>
     </div>
 
-    <div class=" sm:flex-col bg-white flex justify-center items-center -mt-16">
+    <div class="sm:flex-col bg-white flex justify-center items-center -mt-16">
       <nav  class="tabs flex flex-col des:flex des:flex-row">
         <button
           data-target="panel-1"
@@ -113,11 +115,9 @@
       </nav>
     </div>
 
-                                  <!-- Daqui pra cima já está feito! ♥    -->
-
     <div id="panels">
       <div class="panel-1 tab-content active py-5 -mt-12">
-        <div class="flex flex-col des:flex des:flex-row justify-center items-center my-24">
+        <div class="flex flex-col justify-center items-center my-24 des:flex des:flex-row">
         <div class="relative des:-ml-24 des:mr-14 mb:mb-[90px]">
           <div
             class="color-boxT1 overflow-hidden rounded-br-full rounded-tr-full des:w-[750px] des:-ml-64 des:mt-[100px] mb:w-60 mb:-ml-[36px] mb:mt-[55px]"
@@ -135,8 +135,6 @@
         </div>
       </div>
       </div>
-  
-    <!-- Painel dois -->
 
       <div class="panel-2 tab-content py-5 -mt-12 ">
         <div class="flex flex-col des:flex des:flex-row justify-center items-center my-24">
@@ -158,8 +156,6 @@
       </div>
       </div>
 
-    <!-- Painel três -->
-
       <div class="panel-3 tab-content py-5 -mt-12">
         <div class="flex flex-col des:flex des:flex-row justify-center items-center my-24">
           <div class="relative -ml-24 mr-5">
@@ -180,8 +176,6 @@
         </div>
       </div>
     </div>
-
-                                  <!-- Daqui pra cima já está feito! ♥    -->
 
     <div class="h-full">
       <div>
@@ -241,8 +235,6 @@
       </div>
     </div>
 
-                                  <!-- Daqui pra cima já está feito! ♥    -->
-
     <div class="h-full">
       <div>
         <div class="grid place-content-center mb-20 mt-16">
@@ -256,9 +248,6 @@
           </p>
         </div>
       </div>
-    
-                                  <!-- Daqui pra cima já está feito! ♥    -->
-
 
     <div class="bg-white flex justify-center items-center flex-col">
     <div class="faQs-Style mb:w-80 des:w-[500px]" >
@@ -338,13 +327,9 @@
       </div>
     </div>
   </div>
-  
-                                  <!-- Daqui pra cima já está feito! ♥    -->
 
-
-
-  <footer class="footer-style h-full">
-        <div class="box-contatc des:flex mb:flex mb:flex-col h-[400px] items-center justify-center" >
+  <footer class="footer-style bg-darkBlue h-full">
+        <div class="box-contatc bg-softBlue des:flex mb:flex mb:flex-col h-[400px] items-center justify-center" >
           <div class="des:flex mb:flex mb:flex-col justify-center items-center mb-12 mt-12 ">
             <p class="text-center font-light des:mb-8 font-['Rubik']">35,000 + ALREADY JOIND</p>
             <h1 class="des:text-4xl mb:text-2xl text-center font-bold des:w-[500px] font-['Rubik']">Stay up-to-date with what we're doing.</h1>
@@ -356,34 +341,32 @@
           </div>
       
         </div>
-       <div class="des:flex des:items-center des:justify-around mb:flex mb:flex-col">
-        <div class="gap-8 h-12">
-          <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="mr-4"/>
+
+      <div class="des:flex des:items-center des:gap-24 des:w-full des:h-full des:justify-evenly mb:mt-12">
+        <div  class="des:flex des:items-center des:justify-around des:gap-12">
+          <div class="des:flex des:items-center des:justify-center des:mb-12 mb:mb-4 gap-8 ">
+            <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class=""/>
+          </div>
+          <div class="des:flex des:flex-row items-center mb:flex mb:flex-col gap-8 mb:mb-12">
+          <a
+            href="#"
+            class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
+            >FEATURES</a>
+          <a
+            href="#"
+            class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
+            >PRICING</a>
+          <a
+            href="#"
+            class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
+            >CONTACT</a>
+          </div>
         </div>
-          <div class="gap-8 items-center">
-            <a
-              href="#"
-              class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
-              >FEATURES</a
-            >
-            <a
-              href="#"
-              class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
-              >PRINCING</a
-            >
-            <a
-              href="#"
-              class="text-sm text-white transition duration-500 hover:text-pink-500 font-semibold leading-6 text-gray-900"
-              >CONTACT</a
-            >
-          </div>
-        
-          <div class="flex justify-center items-center gap-2">
-           <img class="object-cover transform hover:scale-110 transition duration-300 ease-in-out" src="./images/icon-facebook.svg" alt="icon-facebook">
-           <img class="object-cover transform hover:scale-110 transition duration-300 ease-in-out" src="./images/icon-twitter.svg" alt="icon-twitter">
-          </div>
-     
-        </div> 
+        <div class="flex justify-center items-center des:gap-2 mb:gap-8 mb:mb-12">
+          <img class="object-cover transform hover:scale-110 transition duration-300 ease-in-out" src="./images/icon-facebook.svg" alt="icon-facebook">
+          <img class="object-cover transform hover:scale-110 transition duration-300 ease-in-out" src="./images/icon-twitter.svg" alt="icon-twitter">
+        </div>
+      </div> 
         
           
          
